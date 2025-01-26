@@ -149,3 +149,41 @@ span {
     font-weight: var(--fw-700);
     color: var(--clr-Red);
 }
+@media (min-width:800px) {
+    html {
+        display: grid;
+        place-content: center;
+    }
+    main {
+        max-width: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0;
+    }
+    .website__standalone-text {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .main__title {
+        font-size: 2.5rem;
+        width: 30vw;
+        text-align: start;
+    }
+    .main-caption {
+        font-size: 1.2rem;
+        text-align: start;
+        width: 40vw;
+    }
+    .blue-box__text {
+        width: 360px;
+    }
+}
+@media (min-width:1000px) {
+    .website__standalone-text {
+        margin-right: 3rem;
+    }
+}
