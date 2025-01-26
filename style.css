@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-size: 1rem;
+    --ff-main: 'Poppins';
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    /* Colors */
+     /* ### Primary */
+
+--clr-Red: hsl(0, 100%, 74%);
+--clr-Green: hsl(154, 59%, 51%);
+
+    /* ### Accent */
+
+--clr-Blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+ --clr-DarkBlue: hsl(249, 10%, 26%);
+ --clr-GrayishBlue: hsl(245, 14%, 63%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  html {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: var(--clr-Red);
+    background-image: url(/images/bg-intro-mobile.png);
+    font-family: var(--ff-main);
+    font-size: var(--font-size);
+  }
+  main {
+    padding: 1.5rem;
+    max-width: 400px;
+  }
+  .website__standalone-text {
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+  }
+  .main__title {
+    width: 300px;
+    justify-self: center;
+    margin-bottom: 1rem;
+  }
+  .main-caption {
+    width: 320px;
+    justify-self: center;
+    margin-bottom: 2rem
+  }
+  .website__boxes {
+    text-align: center;
+  }
+  .blue-box {
+    background-color: var(--clr-Blue);
+    padding: 1rem;
+    border-radius: .5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 1px 4px 1px rgba(2, 2, 87, 0.747);
+  }
+  .blue-box__text {
+    width: 240px;
+    place-self: center;
+  }
+  p {
+    opacity: 0.9;
+  }
+  .white-box {
+    background-color: white;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-radius: .5rem;
+  }
+  input {
+    width: 95%;
+    margin-bottom: 1rem;
+    padding: .7rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    outline: transparent;
+    color: var(--clr-GrayishBlue);
+    font-weight: var(--fw-600);
+    padding-left: 1.5rem;
+  }
+button {
+    width: 95%;
+    margin-bottom: .5rem;
+    padding: .7rem;
+    background-color: var(--clr-Green);
+    border: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-weight: var(--fw-600);
+    border-radius: .5rem;
+    box-shadow: 1px 4px 1px rgba(13, 78, 46, 0.664);
+}
+.terms-of-service__text {
+    font-size: .7rem;
+    width: 250px;
+    place-self: center;
+    color: var(--clr-GrayishBlue);
+}
+span {
+    font-weight: var(--fw-700);
+    color: var(--clr-Red);
+}
